@@ -1,20 +1,77 @@
+/* global scope and shared styles */
+
 html {
   font-size: 18px;
 }
 
-.logoContainer {
+body {
+  background-color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.siteContainer {
+  margin: auto;
+  width: 960px;
+}
+
+.logoContainer, .headingContainer {
   background-color: black;
 }
 
+.logoContainer h3, .headingContainer h2, .headingContainer h1, nav a {
+  color: white;
+}
+
+/* header styles */
+
 .logoContainer img {
   height: 1.5rem;
-  margin: auto 0.5rem;
+  margin: 0rem 0.5rem;
 }
 
 .logoContainer h3 {
-  color: white;
   display: inline-block;
-  font-family: Helvetica;
-  font-size: 1rem;
   margin: 0.66rem 0.5rem;
+}
+
+.bannerContainer {
+  background-image: url("../images_gh/moto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.headingContainer {
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+  left: 9rem;
+  width: 20rem;
+}
+
+.headingContainer h2 {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.headingContainer h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navContainer {
+  background-color: firebrick;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav span {
+  margin-top:0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
 }

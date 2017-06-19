@@ -1,0 +1,20 @@
+html {
+  font-size: 18px;
+}
+
+.logoContainer {
+  background-color: black;
+}
+
+.logoContainer img {
+  height: 1.5rem;
+  margin: auto 0.5rem;
+}
+
+.logoContainer h3 {
+  color: white;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 1rem;
+  margin: 0.66rem 0.5rem;
+}

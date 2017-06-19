@@ -1,4 +1,4 @@
-/* global scope and shared styles */
+/* universal and shared styles */
 
 html {
   font-size: 18px;
@@ -10,17 +10,36 @@ body {
   font-size: 1rem;
 }
 
-.siteContainer {
+.mainContainer, .productContainer, .contactContainer {
   margin: auto;
   width: 960px;
 }
 
-.logoContainer, .headingContainer, .footerContainer {
+.logoContainer, .headingContainer, .ImgContainer h4, .contactItem h4, .footerContainer {
   background-color: black;
 }
 
-.logoContainer h3, .headingContainer h2, .headingContainer h1, nav a, footer h5 {
+.headingContainer h2, .headingContainer h1 {
+  font-weight: bold;
+}
+
+.logoContainer h3, .headingContainer h2, .headingContainer h1, nav a, .ImgContainer h4, .contactItem h4, footer h5 {
   color: white;
+}
+
+/* flexbox styles */
+
+.navContainer, .productContainer, .contactContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navContainer  {
+  justify-content: space-around;
+}
+
+.productContainer, .contactContainer {
+  justify-content: space-between;
 }
 
 /* header styles */
@@ -51,20 +70,15 @@ body {
 }
 
 .headingContainer h2 {
-  font-weight: bold;
   margin-bottom: 0.25rem;
 }
 
 .headingContainer h1 {
   font-size: 2rem;
-  font-weight: bold;
 }
 
 .navContainer {
   background-color: firebrick;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 nav span {
@@ -74,6 +88,44 @@ nav span {
 
 nav a {
   text-decoration: none;
+}
+
+/* product section styles */
+
+.productContainer {
+  margin: 3rem auto;
+}
+
+.ImgContainer {
+  border: 4px solid black;
+  width: 30%;
+}
+
+.ImgContainer img {
+  display: block;
+  height: 9rem;
+  margin: 2rem auto;
+  width: 50%;
+}
+
+.ImgContainer h4 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* contact section styles */
+
+.contactContainer {
+  margin-bottom: 4rem;
+}
+
+.contactItem {
+  width: 35%;
+}
+
+.contactItem h4 {
+  padding: 1rem 2rem;
 }
 
 /* footer styles */

@@ -15,11 +15,11 @@ body {
   width: 960px;
 }
 
-.logoContainer, .headingContainer {
+.logoContainer, .headingContainer, .footerContainer {
   background-color: black;
 }
 
-.logoContainer h3, .headingContainer h2, .headingContainer h1, nav a {
+.logoContainer h3, .headingContainer h2, .headingContainer h1, nav a, footer h5 {
   color: white;
 }
 
@@ -74,4 +74,16 @@ nav span {
 
 nav a {
   text-decoration: none;
+}
+
+/* footer styles */
+
+.footerContainer {
+  height: 5rem;
+  padding-left: 9rem;
+}
+
+footer h5 {
+  position: relative;
+  top: 2rem;
 }

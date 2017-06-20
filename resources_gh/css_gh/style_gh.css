@@ -144,10 +144,12 @@ footer h5 {
   top: 2rem;
 }
 
+/* media query styles */
+
 @media only screen and (max-width: 1024px) {
-  header, footer {
+  .mainContainer, .productContainer, .contactContainer {
     margin: auto;
-    width: 960px;
+    width: 100%;
   }
 
   .headingContainer {
@@ -163,6 +165,10 @@ footer h5 {
     display: block;
   }
 
+  .mainContainer {
+    padding: 5% 0;
+  }
+
   .productContainer div:last-child {
     display: none;
   }
@@ -171,11 +177,70 @@ footer h5 {
     width: 47%;
   }
 
+  .contactContainer {
+    margin: 5% 0;
+  }
+
+  .contactItem {
+    width: 35%;
+  }
+
   .footerContainer {
     padding-left: 0rem;
   }
 }
 
 @media only screen and (max-width: 470px) {
+  .bannerContainer {
+    height: 15rem;
+  }
 
+  .headingContainer {
+    padding: 1rem 2rem;
+    position: relative;
+    top: 10rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  .headingContainer h2 {
+    font-size: 0.77rem;
+  }
+
+  .headingContainer h1 {
+    font-size: 1rem;
+  }
+
+  .mainContainer, .productContainer, .contactContainer {
+    margin: auto;
+    width: 100%;
+  }
+
+  .mainContainer {
+    padding: 10% 0;
+  }
+
+  .productContainer div:nth-child(n+2) {
+    display: none;
+  }
+
+  .productContainer {
+    justify-content: center;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .productItem, .contactItem {
+    width: 90%;
+  }
+
+  .contactItem {
+    margin: 0.5rem;
+  }
+
+  footer h5 {
+    text-align: center;
+  }
 }

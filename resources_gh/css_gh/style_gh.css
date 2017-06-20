@@ -81,6 +81,10 @@ body {
   background-color: firebrick;
 }
 
+.menuNavItem {
+  display: none;
+}
+
 nav span {
   margin-top:0.75rem;
   margin-bottom: 0.75rem;
@@ -141,7 +145,35 @@ footer h5 {
 }
 
 @media only screen and (max-width: 1024px) {
+  header, footer {
+    margin: auto;
+    width: 960px;
+  }
 
+  .headingContainer {
+    position: relative;
+    left: 0rem;
+  }
+
+  .navItem a {
+    display: none;
+  }
+
+  .menuNavItem {
+    display: block;
+  }
+
+  .productContainer div:last-child {
+    display: none;
+  }
+
+  .ImgContainer {
+    width: 47%;
+  }
+
+  .footerContainer {
+    padding-left: 0rem;
+  }
 }
 
 @media only screen and (max-width: 470px) {
